@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BUSQUEDA DE CLIENTES</title>
+</head>
+<H1> BUSQUEDA CLIENTES </H1>
+<body>
+
+<h3> <p style = "color:rgb(214, 44, 21)" >  {{ mensaje }} </p>
+
+ <form action="{% url 'Buscarc' %}" method="GET">
+
+    <h4> Ingrese Nombre:   <input type="text" name="nombre" id="nombre" placeholder="Nombre"> </h4> 
+    <h4> Ingrese Apellido:   <input type="text" name="apellido" id="apellido" placeholder="Apellido"> </h4>
+    <h4> Ingrese DNI:   <input type="number" name="dni" id="dni" placeholder="DNI">  </h4>
+    <h4> Ingrese mail:   <input type="email" name="mail" id="mail" placeholder="mail@mail.com"> </h4>
+    
+
+
+    <br>  <input type="submit" value="BUSCAR CLIENTE"> </br>
+    
+</h3>
+    
+    </form>
+</body>
+</html>
+
+
+

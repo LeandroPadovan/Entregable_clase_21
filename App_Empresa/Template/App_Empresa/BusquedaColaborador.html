@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BUSQUEDA DE COLABORADORES</title>
+</head>
+<H1> BUSQUEDA COLABORADORES </H1>
+<body>
+
+<h3> <p style = "color:rgb(214, 44, 21)" >  {{ mensaje }} </p>
+
+ <form action="{% url 'BuscarColaborador' %}" method="GET">
+
+    <h4> Ingrese Nombre:   <input type="text" name="nombre" id="nombre" placeholder="Nombre"> </h4> 
+    <h4> Ingrese Apellido:   <input type="text" name="apellido" id="apellido" placeholder="Apellido"> </h4>
+    <h4> Ingrese DNI:   <input type="number" name="dni" id="dni" placeholder="Dni">  </h4>
+    <h4> Ingrese Mail:   <input type="email" name="email" id="email" placeholder="mail@mail.com"> </h4>
+    <h4> Ingrese Area:   <input type="text" name="area" id="area" placeholder="Area de trabajo"> </h4>
+
+
+    <br>  <input type="submit" value="BUSCAR COLABORADOR"> </br>
+    
+</h3>
+    
+    </form>
+</body>
+</html>
+
+
+

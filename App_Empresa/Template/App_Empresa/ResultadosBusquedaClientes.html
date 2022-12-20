@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULTADO BUSQUEDA DE CLIENTES</title>
+</head>
+<H1>RESULTADO BUSQUEDA CLIENTES </H1>
+<body>
+
+{% if cliente %}
+-------------------------------------------------------------------------------------------------------------
+
+{% for clientes in cliente %}
+
+<h3> <li> Nombre: {{ clientes.nombre }} </li></h3>
+<h3> <li> Apellido: {{ clientes.apellido }} </li></h3>
+<h3> <li> DNI: {{ clientes.dni }} </li></h3>
+<h3> <li> Mail: {{ clientes.mail }} </li></h3>
+
+-------------------------------------------------------------------------------------------------------------
+
+{% endfor %}
+
+{% else %}
+
+<h2> No hay clientes que coincidan con los datos ingresados. </h2>
+
+{% endif %}
+</body>
+</html>
+
+
+

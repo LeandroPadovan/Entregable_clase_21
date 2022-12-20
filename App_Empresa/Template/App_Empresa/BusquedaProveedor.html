@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BUSQUEDA DE PROVEEDORES</title>
+</head>
+<H1> BUSQUEDA PROVEEDORES </H1>
+<body>
+
+<h3> <p style = "color:rgb(214, 44, 21)" > {{ mensaje }} </p>
+
+ <form action="{% url 'BuscarProveedor' %}" method="GET">
+
+    <h4> Ingrese Razon Social:   <input type="text" name="razon_social" id="razon_social" placeholder="Razon Social"> </h4> 
+    <h4> Ingrese CUIT:   <input type="text" name="cuit" id="cuit" placeholder="CUIT"> </h4>
+    <h4> Ingrese Mail:   <input type="email" name="mail" id="mail" placeholder="mail@mail.com">  </h4>
+    <h4> Ingrese Forma de pago:   <input type="text" name="forma_de_pago" id="forma_de_pago" placeholder="Cuenta Corriente, Contado, Cheque"> </h4>
+    
+
+
+<br>  <input type="submit" value="BUSCAR PROVEEDOR"> </br> 
+
+</h3>    
+
+    
+    </form>
+</body>
+</html>
+
+
+
